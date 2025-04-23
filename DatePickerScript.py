@@ -144,8 +144,7 @@ def main():
 
     dateArr = generator(flag)
     
-    if(flag == 0):
-                
+    if(flag == 0):                
         toConv = dateArr[0]
         convertToDate(toConv)
             
@@ -160,6 +159,22 @@ def main():
             
         toConv = dateArr[4]
         convertToDate(toConv)
+        
+    else:
+        toConv = dateArr[0]
+        convertToDate_LeapYear(toConv)
+            
+        toConv = dateArr[1]
+        convertToDate_LeapYear(toConv)
+            
+        toConv = dateArr[2]
+        convertToDate_LeapYear(toConv)
+            
+        toConv = dateArr[3]
+        convertToDate_LeapYear(toConv)
+            
+        toConv = dateArr[4]
+        convertToDate_LeapYear(toConv)
     
     
 if __name__ == "__main__":
