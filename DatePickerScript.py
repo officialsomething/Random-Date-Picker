@@ -33,46 +33,46 @@ def generator(flag):
 def convertToDate(toConv):    
     str = ""
     
-    if(toConv < 31):
+    if(toConv <= 31):
         str = "January {num}".format(num = toConv)
         
-    elif(toConv < 59):
+    elif(toConv <= 59):
         toConv = toConv - 31
         str = "February {num}".format(num = toConv)
         
-    elif(toConv < 90):
+    elif(toConv <= 90):
         toConv = toConv - 59
         str = "March {num}".format(num = toConv)
         
-    elif(toConv < 120):
+    elif(toConv <= 120):
         toConv = toConv - 90
         str = "April {num}".format(num = toConv)
         
-    elif(toConv < 151):
+    elif(toConv <= 151):
         toConv = toConv - 120
         str = "May {num}".format(num = toConv)
         
-    elif(toConv < 181):
+    elif(toConv <= 181):
         toConv = toConv - 151
         str = "June {num}".format(num = toConv)
         
-    elif(toConv < 212):
+    elif(toConv <= 212):
         toConv = toConv - 181
         str = "July {num}".format(num = toConv)
         
-    elif(toConv < 243):
+    elif(toConv <= 243):
         toConv = toConv - 212
         str = "August {num}".format(num = toConv)
         
-    elif(toConv < 273):
+    elif(toConv <= 273):
         toConv = toConv - 243
         str = "September {num}".format(num = toConv)
         
-    elif(toConv < 304):
+    elif(toConv <= 304):
         toConv = toConv - 273
         str = "October {num}".format(num = toConv)
         
-    elif(toConv < 334):
+    elif(toConv <= 334):
         toConv = toConv - 304
         str = "November {num}".format(num = toConv)
         
@@ -85,46 +85,46 @@ def convertToDate(toConv):
 def convertToDate_LeapYear():
     str = ""
     
-    if(toConv < 31):
+    if(toConv <= 31):
         str = "January {num}".format(num = toConv)
         
-    elif(toConv < 60):
+    elif(toConv <= 60):
         toConv = toConv - 31
         str = "February {num}".format(num = toConv)
         
-    elif(toConv < 91):
+    elif(toConv <= 91):
         toConv = toConv - 60
         str = "March {num}".format(num = toConv)
         
-    elif(toConv < 121):
+    elif(toConv <= 121):
         toConv = toConv - 91
         str = "April {num}".format(num = toConv)
         
-    elif(toConv < 152):
+    elif(toConv <= 152):
         toConv = toConv - 121
         str = "May {num}".format(num = toConv)
         
-    elif(toConv < 182):
+    elif(toConv <= 182):
         toConv = toConv - 152
         str = "June {num}".format(num = toConv)
         
-    elif(toConv < 213):
+    elif(toConv <= 213):
         toConv = toConv - 182
         str = "July {num}".format(num = toConv)
         
-    elif(toConv < 244):
+    elif(toConv <= 244):
         toConv = toConv - 213
         str = "August {num}".format(num = toConv)
         
-    elif(toConv < 274):
+    elif(toConv <= 274):
         toConv = toConv - 244
         str = "September {num}".format(num = toConv)
         
-    elif(toConv < 305):
+    elif(toConv <= 305):
         toConv = toConv - 274
         str = "October {num}".format(num = toConv)
         
-    elif(toConv < 335):
+    elif(toConv <= 335):
         toConv = toConv - 305
         str = "November {num}".format(num = toConv)
         
@@ -144,7 +144,8 @@ def main():
 
     dateArr = generator(flag)
     
-    if(flag == 0):        
+    if(flag == 0):
+                
         toConv = dateArr[0]
         convertToDate(toConv)
             
